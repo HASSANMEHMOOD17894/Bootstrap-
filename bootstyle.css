@@ -1,0 +1,19 @@
+ 
+  /* // <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 200 to 700 */
+
+h1{
+  /* font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto; */
+  /* font-weight: <weight>;*/
+  /* font-style: normal;  */
+  
+}
+.carousel-item img{
+    width: 100%;
+    height: 80vh;
+}
+.div2 {
+    text-align: center;
+
+}

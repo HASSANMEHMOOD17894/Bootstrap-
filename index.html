@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="bootstyle.css">
+                          <!-- Boot Strap link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+                          <!-- Google Fonts link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+                            <!-- Font Awesome link -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css">
+                           <!-- Aos library for animation link -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+</head>
+<body>               
+                           <!-- bootstrap -> components -> navbar -->
+    <header id="home">
+    <nav class="navbar navbar-expand-lg navbar-light bg-white px-4 border-bottom fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand fs-1" href="#">Travel-<span class="text-primary">Agency</span></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 fs-5 text-center">
+              <li class="nav-item">
+                <a class="nav-link active text-primary" aria-current="page" href="#home">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about">About</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Services
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#services">Booking</a></li>
+                  <li><a class="dropdown-item" href="#services">Premium Booking</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#services">Customer Services</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#team">Our Team</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+                                    <!-- bootstrap -> components -> carousal -->
+      <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./img/banner1.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption  d-md-block">
+              <h5>Railways</h5>
+              <p>Embark on your journey with seamless railway connections. Discover the world on tracks.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="./img/banner3.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption  d-md-block">
+              <h5>Flight Operations</h5>
+              <p>Fly in comfort. Enjoy a first-class experience in every seat.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="./img/banner7.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption  d-md-block">
+              <h5>Third slide label</h5>
+              <p>Experience the skies in luxury and comfort – where your journey is as relaxing as the destination.</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      </header>
+      <section class="About my-5" id="about">
+        <div class="container ">
+         <div class="text-center my-5"> 
+        <h1 data-aos="fade-up"
+        data-aos-duration="300">About <span class="text-primary">me</span></h1>
+        <hr  class="w-25 m-auto">
+      </div>
+      <div class="row">
+        <div class="col-sm-12 col-md-6 col-lg-6 col-12" 
+        data-aos="zoom-in-right" data-aos-duration="200">
+            <h1>What do you <span class="text-primary">want to know?</span> </h1>
+            <p class="p-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel turpis non nisi 
+              bibendum consectetur. Donec varius, nisi non faucibus consectetur,
+             mauris nisi fermentum ex, at consectetur ipsum dolor sit amet.</p>
+             <button type="button" class="btn btn-light mb-5">More About</button>
+
+                      <!-- bootstrap -> components -> accodian -->
+
+             <div class="accordion" id="accordionExample" data-aos="zoom-in-right" data-aos-duration="300">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    Exclusive Vacation Packages
+                  </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <strong>Discover our handpicked vacation packages</strong> that cater to all types of travelers. From luxury beach resorts to thrilling adventure tours, we have something for everyone. just for you.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    Personalized Itinerary Planning
+                  </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <strong>Let us take the stress out of travel planning</strong> with our personalized itineraries. Whether you're looking to explore historical landmarks or enjoy local cuisines, we'll curate an experience that suits your preferences and interests.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    24/7 Customer Support
+                  </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <strong>Our dedicated team is available around the clock</strong> to assist you with any travel concerns. From last-minute changes to special requests, we're here to ensure your journey is smooth and enjoyable every step of the way.
+                  </div>
+                </div>
+              </div>
+            </div>
+                     
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-6 col-12 m-auto text-end">
+          <img class="img-fluid " src="./img/travel4.jpg">
+        </div>
+
+      </div>
+        </div>
+      </section>
+      <section class="services py-5 bg-light" id="services">
+        <div class="container">
+          <div class="text-center my-5"> 
+            <h1 data-aos="fade-up" data-aos-duration="200">Our <span class="text-primary">Services</span></h1>
+            <hr  class="w-25 m-auto">
+          </div>
+        <div class="row">
+          <div class="col-sm-12 col-md-4 col-lg-4 col-12">
+            <!-- bootstrap -> components -> card -->
+
+            <div class="card bg-primary text-white" data-aos="fade-down-right" data-aos-duration="300">
+  <h5 class="card-header">Featured</h5>
+  <div class="card-body">
+    <img src="https://cdn-icons-png.flaticon.com/128/4617/4617270.png" alt="palm tree" width="40px" height="40px" class="p-2 mb-1">
+    <h5 class="card-title">Tropical Paradise Escape</h5>
+    <p class="card-text">Explore the stunning beaches and vibrant marine life of a tropical paradise. Enjoy all-inclusive resorts, snorkeling adventures, and sunset cruises.</p>
+    <a href="#" class="btn btn- bg-white">Book now!</a>
+  </div>
+</div>
+          </div>
+          <div class="col-sm-12 col-md-4 col-lg-4 col-12">
+            <!-- bootstrap -> components -> card -->
+
+            <div class="card " data-aos="fade-down" data-aos-duration="300">
+  <h5 class="card-header">Featured</h5>
+  <div class="card-body">
+    <img src="https://media.istockphoto.com/id/1186166205/vector/eiffel-tower-icon-silhouette.jpg?s=2048x2048&w=is&k=20&c=Cb80cI5HPCyp2jG4Xrb6B5p0mDLzCD_hQ71PqmOf6ok=" alt="palm tree" width="40px" height="40px" class="p-2 mb-1">
+    <h5 class="card-title">European Cultural Journey</h5>
+    <p class="card-text">Immerse yourself in the rich history and culture of Europe. Visit iconic landmarks, enjoy local cuisine, and explore ancient cities.</p>
+    <a href="#" class="btn btn-primary">Book now!</a>
+  </div>
+</div>
+          </div>
+          <div class="col-sm-12 col-md-4 col-lg-4 col-12">
+            <!-- bootstrap -> components -> card -->
+
+            <div class="card bg-primary text-white" data-aos="fade-down-left" data-aos-duration="300">
+  <h5 class="card-header">Featured</h5>
+  <div class="card-body">
+    <img src="https://cdn-icons-png.flaticon.com/128/8653/8653130.png" alt="palm tree" width="40px" height="40px" class="p-2 mb-1">
+    <h5 class="card-title">Adventure in the Wild</h5>
+    <p class="card-text">Experience the thrill of the wild with a safari adventure. Spot the Big Five, enjoy guided tours, and stay in luxury lodges.</p>
+    <a href="#" class="btn btn- bg-white">Book now!</a>
+  </div>
+</div>
+          </div>
+        </div>
+        <div class="row mt-5">
+          <div class="col-sm-12 col-md-4 col-lg-4 col-12">
+            <!-- bootstrap -> components -> card -->
+
+            <div class="card" data-aos="fade-up-right" data-aos-duration="300">
+  <h5 class="card-header">Featured</h5>
+  <div class="card-body">
+    <img src="https://cdn-icons-png.flaticon.com/128/11273/11273285.png" alt="palm tree" width="40px" height="40px" class="p-2 mb-1">
+    <h5 class="card-title">Romantic Getaway</h5>
+    <p class="card-text">Rekindle the romance with a luxurious getaway. Enjoy spa treatments, candlelight dinners, and private beach access.</p>
+    <a href="#" class="btn btn-primary">Book now!</a>
+  </div>
+</div>
+          </div>
+          <div class="col-sm-12 col-md-4 col-lg-4 col-12">
+            <!-- bootstrap -> components -> card -->
+
+            <div class="card bg-primary text-white" data-aos="fade-up" data-aos-duration="300">
+  <h5 class="card-header">Featured</h5>
+  <div class="card-body">
+    <img src="https://cdn-icons-png.flaticon.com/128/1080/1080405.png" alt="palm tree" width="40px" height="40px" class="p-2 mb-1">
+    <h5 class="card-title">Family Fun Vacation</h5>
+    <p class="card-text">Create unforgettable memories with your family. Enjoy theme parks, beach days, and kid-friendly activities.</p>
+    <a href="#" class="btn btn- bg-white">Book now!</a>
+  </div>
+</div>
+          </div>
+          <div class="col-sm-12 col-md-4 col-lg-4 col-12">
+            <!-- bootstrap -> components -> card -->
+
+            <div class="card" data-aos="fade-up-left" data-aos-duration="300">
+  <h5 class="card-header">Featured</h5>
+  <div class="card-body">
+    <img src="https://cdn-icons-png.flaticon.com/128/770/770655.png" alt="palm tree" width="40px" height="40px" class="p-2 mb-1">
+    <h5 class="card-title">Mountain Adventure</h5>
+    <p class="card-text">For the thrill-seekers, embark on a mountain adventure. Enjoy hiking, rock climbing, and breathtaking views.</p>
+    <a href="#" class="btn btn-primary">Book now!</a>
+  </div>
+</div>
+          </div>
+        </div>
+        </div>
+      
+
+      </section>
+      <section class="team my-5 text-center" id="team">
+        <div class="container">
+          <div class="text-center my-5"> 
+            <h1 data-aos="fade-up" data-aos-duration="200">Our <span class="text-primary">Team</span></h1>
+            <hr  class="w-25 m-auto">
+          </div>
+          <div class="row">
+            <div class="col-sm-12 col-md-4 col-lg-4 col-12">
+              <!-- bootstrap -> components -> card -->
+               <div class="card">
+  
+  <div class="card-body " data-aos="fade-right" data-aos-duration="200">
+    <img src="./img/men1.jpg"  class="img-fluid rounded-circle border border-primary p-2 mb-3" style="width: 250px; height: 250px; object-fit: cover;">
+    <h5 class="card-title">Fabiano</h5>
+    <p class="card-text">Tour Coordinator</p>
+    <a href="#" class="btn btn-primary">Read more</a>
+  </div>
+</div>
+            </div>
+            <div class="col-sm-12 col-md-4 col-lg-4 col-12">
+               <!-- bootstrap -> components -> card -->
+                <div class="card">
+  
+  <div class="card-body" data-aos="zoom-out" data-aos-duration="200">
+    <img src="./img/men3.jpg" class="img-fluid rounded-circle border border-primary p-2 mb-3" style="width: 250px; height: 250px; object-fit: cover;">
+    <h5 class="card-title">Clark</h5>
+    <p class="card-text">Travel Consultant</p>
+    <a href="#" class="btn btn-primary">Read more</a>
+  </div>
+</div>   
+            </div>
+            <div class="col-sm-12 col-md-4 col-lg-4 col-12">
+               <!-- bootstrap -> components -> card -->
+                <div class="card">
+  
+  <div class="card-body" data-aos="fade-left" data-aos-duration="200">
+    <!-- <img src="./img/men4.jpg" class="img-fluid rounded-circle border border-primary p-2"> -->
+    <img src="./img/men4.jpg" class="img-fluid rounded-circle border border-primary p-2 mb-3" style="width: 250px; height: 250px; object-fit: cover;">
+
+    <h5 class="card-title">Ozil</h5>
+    <p class="card-text">Reservation Specialist</p>
+    <a href="#" class="btn btn-primary">Read more</a>
+  </div>
+</div> 
+            </div>
+                
+        </div>
+        </div>
+
+      </section>
+      <section class="contact py-5" id="contact">
+        <div class="container">
+          <div class="text-center my-5"> 
+            <h1 data-aos="fade-up" data-aos-duration="300">Contact <span class="text-primary">Us</span></h1>
+            <hr  class="w-25 m-auto">
+          </div>
+          <div class="row">
+            <div class="col-sm-12 col-md-6 col-lg-6 col-12">
+              <!-- bootstrap -> forms -> layout -->
+              <form class="row g-3">
+                <div class="col-md-6">
+                  <label for="inputEmail4" class="form-label">Email</label>
+                  <input type="email" class="form-control" id="inputEmail4">
+                </div>
+                <div class="col-md-6">
+                  <label for="inputPassword4" class="form-label">Password</label>
+                  <input type="password" class="form-control" id="inputPassword4">
+                </div>
+                <div class="col-12">
+                  <label for="inputAddress" class="form-label">Address</label>
+                  <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                </div>
+                
+                <div class="col-md-6">
+                  <label for="inputCity" class="form-label">City</label>
+                  <input type="text" class="form-control" id="inputCity">
+                </div>
+                <div class="col-md-4">
+                  <label for="inputState" class="form-label">State</label>
+                  <select id="inputState" class="form-select">
+                    <option selected>Choose...</option>
+                    <option>...</option>
+                  </select>
+                </div>
+                <div class="col-md-2">
+                  <label for="inputZip" class="form-label">Zip</label>
+                  <input type="text" class="form-control" id="inputZip">
+                </div>
+                <div class="col-12">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="gridCheck">
+                    <label class="form-check-label" for="gridCheck">
+                      Check me out
+                    </label>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <button type="submit" class="btn btn-primary">Sign in</button>
+                </div>
+              </form>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-6 col-12 m-auto text-end">
+                <img src="./img/contact2.jpg" data-aos="zoom-out-left" data-aos-duration="200" class="img-fluid img-thumbnail mt-2 " style="width: 90%; height: 90%;">
+            </div>
+
+          </div>
+             
+      </section>
+
+      <div class="container-fluid bg-primary text-white p-2 text-center">
+        <h3>Developed by Hassan Mehmood</h3>
+      </div>
+   
+
+
+
+
+
+                <!-- Boot Strap / java script link -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" 
+integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" 
+crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+crossorigin="anonymous"></script>    
+
+                       <!-- AOS -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+</body>
+</html>
